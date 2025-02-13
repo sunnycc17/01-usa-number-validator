@@ -1,0 +1,22 @@
+{
+  "name": "01-usa-number-validator",
+  "version": "1.0.0",
+  "description": "a phone number validator for usa",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunnycc17/01-usa-number-validator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sunnycc17/01-usa-number-validator/issues"
+  },
+  "homepage": "https://github.com/sunnycc17/01-usa-number-validator#readme"
+}
