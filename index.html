@@ -20,14 +20,17 @@
       >
         USA Phone Number Validator
       </h1>
-      <input
-        data-aos="zoom-out"
-        data-aos-duration="1000"
-        type="text"
-        id="user-input"
-        placeholder="  type your number..."
-        class="border rounded-xl p-2 w-[80%] max-w-[400px]"
-      />
+      <div class="relative w-[80%] max-w-[400px]">
+        <span
+          id="typed-placeholder"
+          class="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
+        ></span>
+        <input
+          type="text"
+          id="user-input"
+          class="border rounded-xl p-2 w-full bg-transparent focus:outline-none"
+        />
+      </div>
       <div class="flex justify-center items-center gap-6 mt-8">
         <button
           data-aos="zoom-out"
@@ -62,6 +65,7 @@
         sunny
       </a>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
