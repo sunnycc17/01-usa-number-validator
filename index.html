@@ -4,50 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="/public/usa.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Adamina&display=swap"
-      rel="stylesheet"
-    />
     <title>Telephone Number Validator</title>
   </head>
-  <body>
-    <img
-      src="https://th.bing.com/th/id/R.46984e36111345b7b49ba407cbc0a95b?rik=BltFWFEYIwiZaw&riu=http%3a%2f%2fwww.transparentpng.com%2fthumb%2fclouds%2fxapA4x-clouds-sky-png-picture.png&ehk=IOF5rKlxxk9GUnMxYUQ9a9rug4em2YIvWb6MN1xIjuo%3d&risl=&pid=ImgRaw&r=0"
-      id="triggerImage"
-      alt="cloud"
-    />
-    <p id="movingText">Check if your summer love's number is legit~</p>
-
-    <div
-      class="image-container"
-      title="waves_by_WebStockReview"
-      alt="waves"
-    ></div>
-    <header>Telephone Number Validator</header>
-    <div class="box">
-      <input type="text" id="user-input" placeholder="  type your number..." />
-      <button type="button" id="check-btn">Check</button>
-      <button type="button" id="clear-btn">Clear</button>
+  <body
+    class="flex flex-col min-h-screen relative bg-cover bg-center bg-no-repeat text-black"
+    style="background-image: url('public/bg-usa.jpg')"
+  >
+    <main
+      class="flex flex-col justify-center items-center flex-grow w-full max-w-screen"
+    >
+      <h1 class="p-5 m-5 font-semibold uppercase">
+        USA Phone Number Validator
+      </h1>
+      <input
+        type="text"
+        placeholder="  type your number..."
+        class="border rounded-xl p-2 w-[80%] max-w-[400px]"
+      />
+      <div class="flex justify-center items-center gap-6 mt-5">
+        <button
+          class="bg-gradient-to-r from-blue-700 to-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-blue-300 transition-transform duration-300"
+        >
+          Check
+        </button>
+        <button
+          class="bg-gradient-to-r from-red-700 to-red-400 text-white py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-red-300 transition-transform duration-300"
+        >
+          Clear
+        </button>
+      </div>
       <div id="results-div"><p></p></div>
-    </div>
-    <footer>
-      Made by
+    </main>
+
+    <footer
+      class="flex items-center justify-center py-2 w-full leading-relaxed border-t bg-white"
+    >
+      <p>Made with ♡ by &nbsp;</p>
       <a
         target="_blank"
-        href="https://www.freecodecamp.org/sunnyc17"
-        title="thx!:>"
+        href="https://github.com/sunnycc17"
+        title="thx for visitin'! =D"
+        class="underline italic"
       >
-        sunny_sunshine
+        sunny
       </a>
-      <i class="ri-sun-line"></i>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
