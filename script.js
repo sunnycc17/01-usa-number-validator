@@ -19,17 +19,22 @@ check.addEventListener("click", () => {
 
   const isValid = validateUSPhoneNumber(phoneNumber);
   console.log(`Phone number: ${phoneNumber}, Valid: ${isValid}`);
-  results.style.display = "block";
-  results.textContent = isValid
-    ? `Valid US number: ${phoneNumber}`
-    : `Invalid US number: ${phoneNumber}`;
+
+  results.style.visibility = "visible";
+  results.style.opacity = "1";
+  results.innerHTML = isValid
+    ? `✅ Valid US number: ${phoneNumber}`
+    : `❌ Invalid US number: ${phoneNumber}`;
 });
 
 clear.addEventListener("click", () => {
   console.log("Clear button clicked");
   input.value = "";
-  results.style.display = "none";
-  results.textContent = "";
+  results.style.opacity = "0";
+  setTimeout(() => {
+    results.style.visibility = "hidden";
+    results.innerHTML = "&nbsp;"; // Keeps the space reserved
+  }, 300);
 });
 
 AOS.init({

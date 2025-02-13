@@ -3,3 +3,15 @@
 main {
   height: 80vh;
 }
+
+#results-div {
+  min-height: 50px; /* Ensures space is always reserved */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden; /* Hides content while keeping space */
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  font-weight: bold; /* Ensure text takes up the same space */
+}
