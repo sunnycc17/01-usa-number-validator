@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/public/usa.png" />
     <link rel="stylesheet" href="src/output.css" />
     <title>Telephone Number Validator</title>
@@ -11,24 +12,32 @@
     class="flex flex-col min-h-screen relative bg-cover bg-center bg-no-repeat text-black"
     style="background-image: url('public/bg-usa.jpg')"
   >
-    <main
-      class="flex flex-col justify-center items-center flex-grow w-full max-w-screen"
-    >
-      <h1 class="p-5 m-5 font-semibold uppercase">
+    <main class="flex flex-col justify-center items-center relative">
+      <h1
+        class="p-5 m-3 font-semibold uppercase"
+        data-aos="zoom-out"
+        data-aos-duration="1000"
+      >
         USA Phone Number Validator
       </h1>
       <input
+        data-aos="zoom-out"
+        data-aos-duration="1000"
         type="text"
         placeholder="  type your number..."
         class="border rounded-xl p-2 w-[80%] max-w-[400px]"
       />
-      <div class="flex justify-center items-center gap-6 mt-5">
+      <div class="flex justify-center items-center gap-6 mt-8">
         <button
+          data-aos="zoom-out"
+          data-aos-duration="1000"
           class="bg-gradient-to-r from-blue-700 to-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-blue-300 transition-transform duration-300"
         >
           Check
         </button>
         <button
+          data-aos="zoom-out"
+          data-aos-duration="1000"
           class="bg-gradient-to-r from-red-700 to-red-400 text-white py-3 px-6 rounded-lg shadow-lg hover:scale-105 hover:shadow-red-300 transition-transform duration-300"
         >
           Clear
@@ -38,7 +47,7 @@
     </main>
 
     <footer
-      class="flex items-center justify-center py-2 w-full leading-relaxed border-t bg-white"
+      class="flex items-center justify-center py-2 w-full leading-relaxed border-t bg-white bottom-0 fixed"
     >
       <p>Made with ♡ by &nbsp;</p>
       <a
@@ -50,7 +59,7 @@
         sunny
       </a>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
